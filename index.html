@@ -2,121 +2,71 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Romulo Lessa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <title>Romulo Lessa Desenvolvedor Web</title>
 </head>
 <body>
     <header>
-        <div class="painel">
-            <!-- texto principal nível 1 -->
-            <img id="imagem" src="img/codigo_de_programacao_fundo.jpg" alt="imagem de codigo para fundo">
+        <div class="header">
             <h1>Rômulo Lessa</h1>
-            <img id="perfil" src="img/perfil.jpg" alt="foto do perfil">
-            <p>Desenvolvedor junior front-end</p>
-        </div>    
-        <div id="menu">
-            <!--menu lateral -->
-            <a href="#Sobre_min">Sobre min|</a>
-            <a href="#Conhecimento">Conhecimento |</a>
-            <a href="#Projetos">Projetos |</a>
-            <a href="#Contato">Contato</a>
+            <h3>Desenvolvedor Web</h3>
+            <div class="container-linha">
+                <span></span>
+            </div>
         </div>
     </header>
-    <div id="sobre">
-        <!-- texto principal nível 2 -->
-        <h2 id="Sobre_min">Sobre min</h2> 
-        <!--paragrafo-->
-        <p>Me chamo Romulo de Almeida Lessa, sou morador do Rio de Janeiro no endereço 
-        avenida lúcio costa - barra da tijuca, estudante do ensino superior da 
-        faculdade universidade do grande rio- UNIGRANRIO estou atualmente no 4 período com 
-        previsão de formatura no 2 semestre de 2020, tenho conhecimento intermediário em 
-        html, css, javascript e java, iniciante nos ES6, git, sass e react</p>
-    </div>
-    <div class="conhecimento">
-        <!--texto principal nível 2 -->
-        <h2 id="Conhecimento">Conhecimento</h2>
-        <!--Lista de 8 itens -->
-        <ul>
-            <li>Html
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%;" 
-                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%</div>
+    <main>
+        <nav>
+            <div class="main">
+                <div id="sobre">
+                    <h3>Sobre </h3>
+                    <div class="conteudo sobre" onclick="exibe('sobre')">
+                        <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker</p>
+                    </div>
+            </div>
+            <div id="portifolio">
+                <h3>Portifolio</h3>
+                    <div class="conteudo portifolio" onclick="exibe('portifolio')">
+                    <p>Meu Site</p>
+                    </div>
+            </div>
+                <div id="escolaridade"> 
+                    <h3>Escolaridade</h3>
+                    <div class="conteudo escolaridade" onclick="exibe('escolaridade')">
+                        <h4>Ensino Medo</h4>
+                        <p>concuido em 2014</p>
+                        <h4>Ensino Superior</h4>
+                        <p>Analise e Desenvolvimento de Sistemas - Unigranrio - concluido em 2021</p>
+                        <h4>Cursos Extras</h4>
+                        <p><b>DevMidea</b></p>
+                        <p>html e css</p>
+                        <p><b>DevMidea</b></p>
+                        <p>JavaScript</p>
+                        <p><b>DevMidea</b></p>
+                        <p>Logica de Programação</p>
+                        <p><b>Scrum</b></p>
+                        <p>Certificado de fundation (nome da emporesa)</p>
+                    </div>
                 </div>
-            </li><!--barra de porcentagem-->
-            <li>Css
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 40%;" 
-                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">40%</div>
+                <div id="historico-profissao">
+                    <h3>historico Profissional</h3>
+                    <div class="conteudo storyjob" onclick="exibe('storyjob')">
+                        <p></p>
+                    </div>
                 </div>
-            </li><!--barra de porcentagem-->
-            <li>Javascript
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 40%;" 
-                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">40%</div>
-                </div>
-            </li><!--barra de porcentagem-->
-            <li>Java
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 30%;" 
-                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">30%</div>
-                </div>
-            </li><!--barra de porcentagem-->
-            <li>ES6
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 30%;" 
-                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">30%</div>
-                </div>
-            </li><!--barra de porcentagem-->
-            <li>Git
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 50%;" 
-                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
-                </div>
-            </li><!--barra de porcentagem-->
-            <li>Sass
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 10%;" 
-                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">10%</div>
-                </div>
-            </li><!--barra de porcentagem-->
-            <li>React
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 10%;" 
-                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">10%</div>
-                </div>
-            </li><!--barra de porcentagem-->
-        </ul>
-    </div>
-    <div id="projetos">
-        <h2 id="Projetos">Projetos</h2>
-        <h3>Concluídos</h3>
-        <p><a href="https://romulolessa.github.io/MaratonaDev/">Maratona Dev</a></p>
-        <p><a href="https://github.com/romulolessa/Semana-OmniStack">  Semana OminiStack</a></p>
-        <h3>Andamento</h3>
-        <p>Meu site/ portifolio em breve link</p>
-        <h3>Futuros</h3>
-        <p>Sistema de estoque de roupas em javascript</p>
-    </div>
-    <h2 id="Contato">Contato</h2>
+            </div>
+        </nav>
+    </main>
     <footer>
-        <form method="get" action="mailto:romulolessadev@gmail.com">
-            <div class="form-group">
-                <label for="exampleInputPassword1">Nome:</label>
-                <input class="form-control" type="text" placeholder="Digite seu nome">
-            </div>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Email:</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu email">
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1">Escreva em poucas palavras o assunto do contato</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+        <div class="footer">
+            <p>Desenvolvido por <b>Romulo Lessa</b></p>
+        </div>
     </footer>
+    
 </body>
+<script src="script.js"></script>
 </html>
