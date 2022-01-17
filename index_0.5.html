@@ -5,54 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet"> 
     <title>Romulo Lessa Front-end Developer</title>
 </head>
 <body>
-    <div id="grid">
-        <header id="info-minha">
-            <div id="perfil">
-                <img src="./img/perfil_romulo-removebg-preview.png">
-                <h1>Rômulo Lessa</h1>
-                <h2>Front-end Developer</h2>
-            </div>
-            <div id="social-media">
-                <p><img src="./img/map-loc.svg" alt="figura de localização"> Brazil</p>
-                <p><img src="./img/trabalho.svg" alt="figura de trabalho"> Prefeitura DC-RJ</p>
-                <p><img src="./img/git.svg" alt="figura de Github"> romulolessa</p>
-                <p><img src="./img/linkdin.svg" alt="figura de Linkdin"> romulo-lessa</p>
-                <p><img src="./img/web.svg" alt="figura de Site"> romulolessa.github.io/meu-site/</p>
-                <p><img src="./img/email.svg" alt="figura de E-mail"> romulolessadev@gmail.com</p>
-            </div>
-            <div id="tecnoligias">
-                <h2>Tecnologias</h2>
-                <p>JAVASCRIPT</p>
-                <p>BOOTSTRAP</p>
-                <p>SQL</p>
-                <p>GIT</p>
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>SCRUM</p>
-            </div>
-            <div id="experiencias">
-                <h2>Experiências</h2>
-                <p><strong>Prefeitura DC-RJ</strong></p>
-                <p>2020 - Atualmente</p>
-                <p>Administration and creation of Excel spreadsheets, customer service and hardware maintenance</p>
-            </div>
-            <div id="educacao">
-                <h2>Educação</h2>
-                <p><strong>Unigranrio</strong></p>
-                <p>2017 - 2021</p>
-                <p>Analise e Dev de Sistemas</p>
-            </div>
+        <header>
+            <section>
+                <section class="profile">
+                    <div>
+                        <p><img src="img/perfil_romulo-removebg-preview.png" alt="minha foto de perfil">
+                        </p>
+                        <h1>Rômulo Lessa</h1>
+                        <h2>Front-end Developer</h2>
+                    </div>
+                </section>
+                <article class="links">
+                    <div>
+                        <p><img src="./img/map-loc.svg" alt="figura de localização"> Brazil</p>
+                        <p><img src="./img/trabalho.svg" alt="figura de trabalho"> Prefeitura DC-RJ</p>
+                        <p><img src="./img/git.svg" alt="figura de Github"> romulolessa</p>
+                        <p><img src="./img/linkdin.svg" alt="figura de Linkdin"> romulo-lessa</p>
+                        <p><img src="./img/web.svg" alt="figura de Site"> romulolessa.github.io/meu-site/</p>
+                        <p><img src="./img/email.svg" alt="figura de E-mail"> romulolessadev@gmail.com</p>
+                    </div>
+                </article>
+                <section class="tecnologies">
+                    <div>
+                        <h2>Tecnologias</h2>
+                        <div class="container">
+                            <div class="row1">
+                                <p>JAVASCRIPT</p>
+                                <p>BOOTSTRAP</p>
+                                <p>SQL</p>
+                            </div>
+                            <div class="row2">
+                                <p>GIT</p>
+                                <p>HTML</p>
+                                <p>CSS</p>
+                            </div>
+                            <div class="row3">
+                                <p>SCRUM</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="experiences">
+                    <div>
+                        <h2>Experiências</h2>
+                        <div>
+                            <p><strong>Prefeitura DC-RJ</strong></p>
+                            <p>2020 - Atualmente</p>
+                            <p>Administration and creation of Excel spreadsheets, customer service and hardware maintenance</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="education">
+                    <div >
+                        <h2>Educação</h2>
+                        <div>
+                            <p><strong>Unigranrio</strong></p>
+                            <p>2017 - 2021</p>
+                            <p>Analise e Dev de Sistemas</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
         </header>
-        <main id="info-project">
-            <div id="my-projects">
+        <main>
+            <article class="my-projects">
                 <p>My projects</p>
                 <p>Veja todos</p>
-            </div>
-            <div id="projet">
-                <div id="project-ex">
+            </article>
+            <div class="project">
+                <article class="project-ex">
                     <div>
                         <p><img src="./img/folder.svg" alt="figura de pasta">Project in development</p>
                         <p>Consulta dos codigos em breve.</p>
@@ -62,8 +89,8 @@
                         <p><img src="./img/fork.svg" alt="figura de fork"> 100</p>
                         <p><img src="./img/bol-color.svg" alt="figura de cor"> JavaScript</p>
                     </div>
-                </div>
-                <div id="project-ex">
+                </article>
+                <article class="project-ex2">
                     <div>
                         <p><img src="./img/folder.svg" alt="figura de pasta">Project in development</p>
                         <p>Consulta dos codigos em breve.</p>
@@ -73,29 +100,34 @@
                         <p><img src="./img/fork.svg" alt="figura de fork"> 100</p>
                         <p><img src="./img/bol-color.svg" alt="figura de cor"> JavaScript</p>
                     </div>
-                </div>
+                </article>
             </div>
-            <div>
+            <div class="recent-post">
                 <h2>Recent Posts</h2>
             </div>
-            <div>
-                <div>
-                    <img src="./img/" alt="minha foto de perfil">
+            <div class="post">
+                <div class="post-img">
+                    <p><img src="./img/perfil_romulo-removebg-preview.png" alt="minha foto de perfil"></p>
                 </div>
                 <div>
-                    <p><strong>Area destinada a recent posts feitos no github</strong></p>
-                    <p>1 mês atrás</p>
+                    <div class="post-title">
+                        <p><strong>Area destinada a recent posts feitos no github</strong></p>
+                        <p>1 mês atrás</p>
+                    </div>
                     <p>Descrição do ultimo post</p>
-                    <p>#react-native</p>
-                    <p>#nodejs</p>
-                    <p>#html</p>
-                    <p>#css</p>
+                    <div class="post-skills">
+                        <p>#react-native</p>
+                        <p>#nodejs</p>
+                        <p>#html</p>
+                        <p>#css</p>
+                    </div>
+                    
+                    
                 </div>
             </div>
         </main>
         <footer>
-            <p>Feito com 💜 por Romulo Lessa</p>
+            <p>Feito por Romulo Lessa</p>
         </footer>
-    </div>
 </body>
 </html>

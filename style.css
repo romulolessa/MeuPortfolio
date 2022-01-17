@@ -1,24 +1,153 @@
-* {
-    box-sizing: border-box;
-  }
-  #grid {
-      display: grid;
-  }
-  header{
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 3;
-  }
-  main{
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 3;
-  }
-  footer {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 4;
-  }
+*{
+  box-sizing:  border-box;
+  margin: 0px;
+  padding: 0px;
+  max-width: 920px;
+}
+
+body{
+   background: rgba(34, 33, 44, 1);
+   color: rgba(131, 126, 159, 1);
+   display: grid;
+   grid-template-areas:
+    "header main"
+    "header main"
+    "footer footer";
+    padding: 3.5vw;
+    padding-bottom: 0;
+    overflow:hidden;
+}
+
+header{
+   grid-area: header;
+   width: 42vw;
+}
+
+main{
+   grid-area: main;
+   width: 50vw;
+}
+footer{
+   grid-area: footer;
+   text-align: center;
+}
+
+/*Inicio do Header*/
+.profile,
+.links,
+.tecnologies,
+.experiences,
+.education{
+  margin: 2.8vw;
+}
+.profile h1,
+.profile p,
+.profile h2{
+  padding: 1.5vw;
+}
+.profile,
+.links, 
+.tecnologies, 
+.experiences, 
+.education,
+.my-projects,
+.project .project-ex,
+.project  .project-ex2,
+.recent-post,
+.post{
+  margin-bottom: 2rem;
+  background: #302F3D;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+
+}
+.profile,
+.links, 
+.tecnologies, 
+.experiences, 
+.education{
+    text-align: center;
+    font-family: Merriweather Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+}
+.profile h1{
+  font-family: Merriweather Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 33px;
+  line-height: 29px;
+}
+ .profile p img ,
+ .post p img{
+    width: 8rem;
+    border-radius: 50%;
+    border: 2px solid #00FF00;
+}
+
+.links,
+.experiences,
+.education {
+  text-align: justify ;
+}
+.experiences h2,
+.education h2 {
+  text-align: center;
+}
+.links p,
+.experiences p,
+.education p{
+  padding: 15px 0 15px 40px;
+}
+.tecnologies .container{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px 10px 40px;
+}
+.container p{
+  width: 86px;
+  height: 24px;
+  margin: 15px;
+
+  background: #CB92B1;
+  border-radius: 30px;
+}
+/*Final do Header*/
+/*Incio do Main*/
+.my-projects{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 2.5vw 1.5vw
+}
+.project{
+  display: flex;
+  justify-content: space-between;
+}
+.project-ex,
+.project-ex2 {
+  padding: 2vw;
+}
+.recent-post{
+  padding: 2vw;
+}
+.post{
+  display: flex;
+}
+.post-img{
+  padding: 1.5vw;
+}
+.post-img p img{
+  width: 5rem;
+}
+.post-title{
+  padding: 1.5vw 0;
+}
+.post-skills{
+  display: flex;
+  flex-direction: row;
+  padding: 0.7vw 0 0 0;
+}
+/*Final do Main*/

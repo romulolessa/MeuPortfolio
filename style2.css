@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+  }
+  body{
+    background: rgba(34, 33, 44, 1);
+    color: rgba(131, 126, 159, 1);
+  }
+  #grid {
+      display: grid; 
+  }
+  header{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: auto;
+  }
+  section{
+    width: 348px;
+    height: 292px;
+    margin: 0;
+  } 
+  section article{
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    width: 348px;
+    height: 292px;
+
+    
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+
+  }
+    #profile img{
+        height: 100%;
+
+  }
+  #profile p{
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    left: 150px;
+    top: 72px;
+
+    
+  }
+  #profile p img{
+    width: 128px;
+    height: 128px;
+    left: 150px;
+    top: 72px;
+    border: 2px solid #00FF00;
+    box-sizing: border-box;
+  }
+  #profile h1,
+  #profile h2{
+    position: absolute;
+    width: 162px;
+    height: 26px;
+
+    
+    font-family: Merriweather Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 29px;
+    
+    color: #837E9F;
+  }
+  #profile h1{
+    left: 133px;
+    top: 227px;
+  }
+  #profile h2{
+    left: 143px;
+    top: 265px;
+  }
+  /*#profile img,
+  .post img{
+      height: 7.8rem;
+      width: 7.8rem;
+      border-radius: 50%;
+  }*/
+  #profile h1{
+   
+  }
+  #profile h2{
+
+    
+    
+    color: #837E9F;
+  }
+  #links{
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+
+  }
+  #tecnologies{
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+  }
+  #experiences{
+    grid-row-start: 4;
+    grid-row-end: 5;
+
+}
+#education{
+    grid-column-start: 2;
+    grid-column-end: 2;
+
+
+}
+ main{
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+  }
+  #my-project{
+    
+  }
+  #project-ex{
+
+  }
+  #project-ex2{
+  }
+  .recent-post{
+    
+  }
+  .post{
+    position: absolute;
+    width: 952px;
+    height: 201px;
+    left: 448px;
+    top: 489px;
+  }
+  footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+    font-family: Merriweather Sans;
+    font-style: normal;
+    font-weight: normal;
+
+
+
+color: #837E9F;
+  }
