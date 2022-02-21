@@ -41,6 +41,10 @@ header h2{
 .education{
   margin: 2.8vw;
 }
+.links p a{
+  text-decoration: none;
+  color: rgba(131, 126, 159, 1);
+}
 .profile h1,
 .profile p,
 .profile h2{
