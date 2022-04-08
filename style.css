@@ -64,6 +64,7 @@ header h2{
   background: #302F3D;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
+  width: -webkit-fill-available;
 }
 .profile,
 .links, 
@@ -122,10 +123,6 @@ header h2{
   flex-direction: column;
 }
 
-.tecnologies{
-
-}
-
 .container{
   display: flex;
   justify-content: center;
@@ -152,10 +149,16 @@ header h2{
 .project{
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .project-ex,
 .project-ex2 {
   padding: 1vw;
+}
+.link-project{
+  text-decoration: none;
+  color: rgba(131, 126, 159, 1);
 }
 .recent-post{
   padding: 2vw;
@@ -189,11 +192,7 @@ header h2{
  main{
    width: 90vw;
  }
-<<<<<<< HEAD
  .project{
    display: block;
  }
 }
-=======
-}
->>>>>>> 1f254e6f449cc9fa6aec61c1cf2bbd82dc89faa8
