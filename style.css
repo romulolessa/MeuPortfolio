@@ -135,7 +135,7 @@ header h2{
   height: 24px;
   margin: 15px;
 
-  background: #CB92B1;
+  background: #b765da;
   color: black;
   border-radius: 30px;
   max-width: 100%;
@@ -196,7 +196,7 @@ header h2{
   width: 90vw
  }
  main{
-   width: 90vw;
+   width: 86.5vw;
  }
  .project{
    display: block;
