@@ -146,6 +146,10 @@ header h2{
 }
 /*Final do Header*/
 /*Incio do Main*/
+.main-sec{
+  padding: 16.5vh;
+  padding-top: 0;
+}
 .my-projects{
   display: flex;
   justify-content: space-between;
@@ -157,6 +161,10 @@ header h2{
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+.project-title{
+  display: flex;
+  align-items: center;
 }
 .project-ex,
 .project-ex2 {
@@ -196,7 +204,7 @@ header h2{
   width: 90vw
  }
  main{
-   width: 86.5vw;
+   width: 98vw;
  }
  .project{
    display: block;
